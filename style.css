@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+body {
+  height: 100vh;
+}
+nav {
+  background-color: #333;
+  color: #fff;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.2rem;
+}
+.search-container input,
+button {
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+.search-container input {
+  border-radius: 3px 0 0 3px;
+  border-radius: 5px;
+}
+.search-container button {
+  border-radius: 5px;
+  background-color: green;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+button:hover {
+  opacity: 0.9;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-block: 2rem;
+}
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.movie-container {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px #333;
+  width: 80%;
+  border-radius: 1rem;
+}
+.movie-poster img {
+  height: 100%;
+  margin-right: 30px;
+  border-radius: 1rem 0 0 1rem;
+}
+.movie-info {
+  padding-inline: 1rem;
+}
+.movie-info h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 1rem 0 0.8rem 0;
+}
+.movie-info h2 + p {
+  text-align: center;
+}
+.movie-genre {
+  display: flex;
+  justify-content: center;
+  margin-block: 10px;
+  overflow-x: auto;
+}
+.movie-genre p {
+  background-color: #333;
+  color: #fff;
+  padding: 5px 14px;
+  margin-inline: 10px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  font-weight: 700;
+}
+.movie-info {
+  font-size: 18px;
+  margin-block: 1rem;
+  line-height: 24px;
+}
+
+.no-bg {
+  background-color: none;
+  box-shadow: none;
+  align-items: center;
+}
+footer {
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding-block: 1.2rem;
+  position: sticky;
+  top: 100vh;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+/* Responsive Part */
+
+@media screen and (max-width: 950px) {
+  .movie-container {
+    flex-direction: column;
+  }
+  .movie-poster img {
+    width: 100%;
+    height: fit-content;
+    margin-right: 0;
+  }
+  .movie-info {
+    padding-inline: 30px;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .navbar {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .search-container{
+    margin-top: 10px;
+  }
+}
