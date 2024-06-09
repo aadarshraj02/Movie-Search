@@ -5,7 +5,7 @@ const searchBtn = document.querySelector(".search-btn");
 
 const getMovieInfo = async (movieName) => {
   try {
-    const myApiKey = "689a4d85";
+    const myApiKey = "Your_API_Key";
     const url = `http://www.omdbapi.com/?apikey=${myApiKey}&t=${movieName}`;
 
     const response = await fetch(url);

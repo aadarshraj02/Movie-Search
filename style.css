@@ -15,7 +15,7 @@ nav {
 .navbar {
   display: flex;
   justify-content: space-between;
-  align-self: center;
+  align-items: center;
   max-width: 1200px;
   margin: 0 auto;
   padding: 1.2rem;
@@ -135,7 +135,7 @@ footer {
     justify-content: center;
     align-items: center;
   }
-  .search-container{
+  .search-container {
     margin-top: 10px;
   }
 }
